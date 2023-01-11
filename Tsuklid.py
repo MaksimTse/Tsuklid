@@ -28,7 +28,7 @@ print()
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 while 1:
     try:
-        a = (abs(int(input("Sisestage täisarv => ")))) #dobavil 2 skobki
+        a = (abs(int(input("Sisestage täisarv => ")))) #lisatud 2 sulgu
         break
     except ValueError:
          print("See ei ole täisarv")
@@ -39,42 +39,41 @@ else:
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     print("Määrake, kui palju paaris ja mitu paaritu numbrit on arvus")
     print()
-    c=b=a #ubral ravno
-    paaris =0 #ubral ravno
-    paaritu = 0 #ubral ravno
-    while b > 0: #izmenil dvoetochie eto ne js ili C# :)
-        if b % 2==0: #dobavil ravno
-            paaris += 1 #ubral probeli/TAB i + pomenjal mestami
+    c=b=a #eemaldatud võrdub
+    paaris =0 #eemaldatud võrdub
+    paaritu = 0 #eemaldatud võrdub
+    while b > 0: #muutis käärsoole
+        if b % 2==0: #lisatud võrdsed
+            paaris += 1 #eemaldatud tühikud / TAB ja vahetatud + kohtades
         else:
-            paaritu += 1 #ubral probeli/TAB i + pmenjal mestami
-        b = b // 10 #ubral probel
-    print("Paaris arvude kogus:",paaris) #dobavil zapjatuju
-    print("Paaritu on:",paaritu) #dobavil zapjatuju
+            paaritu += 1 #eemaldatud tühikud / TAB ja vahetatud + kohtades
+        b = b // 10 #eemaldas ruumi
+    print("Paaris arvude kogus:",paaris) #lisas koma
+    print("Paaritu on:",paaritu) #lisas koma
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     print("*Tagurda* sisestatud number")
     print()
     b=0
-    while a > 0: #dobavil dvoetochie
+    while a > 0: #lisas koolon
         number = a % 10
         a = a // 10
         b = b * 10
-        b += number #ubral probel i pomenjal mestami +
+        b += number #eemaldas ruumi ja vahetatud + kohtades
     print("*Ümberpööratud* number", b)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("Syracuse hüpoteesi testimine") #ubral skobku
+    print("Syracuse hüpoteesi testimine") #eemaldatud sulg
     print()
-    if c % 2==0: #dobavil ravno
+    if c % 2==0: #lisatud võrdsed
         print("с - paarisarv. Jagame 2-ga.")
     else:
         print("с - paaritu number. Korrutage 3-ga, lisage 1 ja jagage 2-ga.")
     while c != 1:
-            if c % 2==0: #dobavil ravno
-                    c=c / 2 #ubral ravno
+            if c % 2==0: #lisatud võrdsed
+                    c=c / 2 #eemaldatud võrdub
             else:
-                    c=(3*c + 1) / 2 #ubral ravno
-            print(round(c), end=" ") #dobavil kovichki
+                    c=(3*c + 1) / 2 #eemaldatud võrdub
+            print(round(c), end=" ") #lisatud jutumärgid ja lisage ümardamine
     print()
-    print("Hüpotees on õige") #izmenil kovichki
-
+    print("Hüpotees on õige") #muudetud hinnapakkumisi
