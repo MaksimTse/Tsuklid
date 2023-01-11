@@ -47,7 +47,7 @@ else:
             paaris += 1 #eemaldatud tühikud / TAB ja vahetatud + kohtades
         else:
             paaritu += 1 #eemaldatud tühikud / TAB ja vahetatud + kohtades
-        b = b // 10 #eemaldas ruumi
+        b = b // 10 #eemaldas tühik
     print("Paaris arvude kogus:",paaris) #lisas koma
     print("Paaritu on:",paaritu) #lisas koma
     print()
@@ -55,7 +55,7 @@ else:
     print("*Tagurda* sisestatud number")
     print()
     b=0
-    while a > 0: #lisas koolon
+    while a > 0: #lisas :
         number = a % 10
         a = a // 10
         b = b * 10
@@ -74,6 +74,6 @@ else:
                     c=c / 2 #eemaldatud võrdub
             else:
                     c=(3*c + 1) / 2 #eemaldatud võrdub
-            print(round(c), end=" ") #lisatud jutumärgid ja lisage ümardamine
+            print(round(c), end=" ") #lisatud juttumärgid ja lisage ümardamine
     print()
-    print("Hüpotees on õige") #muudetud hinnapakkumisi
+    print("Hüpotees on õige") #juttumärgid vahetatud
